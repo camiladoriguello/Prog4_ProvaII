@@ -29,16 +29,17 @@ const mudaSaldo = () =>{
 
     let valorConta = document.getElementById('valor')
     let saldoAtual = document.getElementById('valor-saldo')
+   
     parseFloat(saldoAtual.value, 10)
 
     if (tipoConta === 'Despesa'){
-        saldoAtual = parseFloat(saldoAtual.value, 10) - parseFloat(valorConta.value, 10)
+        let result = parseFloat(saldoAtual.value, 10) - parseFloat(valorConta.value, 10)
         alert("Despesa adicionada!")
-        alert(parseFloat(saldoAtual))
+        alert(result)
     }else if (tipoConta === 'Receita'){
-        saldoAtual = parseFloat(saldoAtual.value, 10) + parseFloat(valorConta.value, 10 )
+        let result = parseFloat(saldoAtual.value, 10) + parseFloat(valorConta.value, 10)
         alert("Receita adicionada!")
-        alert(parseFloat(saldoAtual))
+        alert(result)
     }
 }
 
