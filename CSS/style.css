@@ -1,0 +1,38 @@
+div#container {
+    width: 550px;
+    border: 1px solid black;
+    margin: 35px auto;
+    padding: 0;
+}
+
+div.div-form{
+    padding: 3px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    padding: 3px; 
+}
+
+table {
+    width: 98%;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+th,
+td {
+    border: 1px solid black;
+}
+
+td {
+    text-align: center;
+}
+
+div#div-saldo{
+    float: right;
+    margin: 5px;
+}

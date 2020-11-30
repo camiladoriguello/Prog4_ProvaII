@@ -1,10 +1,56 @@
-<html lang="en">
+<!DOCTYPE html>
+
 <head>
+    <title>Prova 02</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css"/>
 </head>
 <body>
-    
+
+    <div id="container">
+        <h1>Controle de Contas</h1>
+
+        <form>
+            <div class="div-form">
+                <label>Descrição</label>
+                <input type="text" id="descricao">
+            </div>
+            <div class="div-form">
+                <label>Valor</label>
+                <input type="number" id="valor">
+            </div>
+            <div class="div-form">
+                <label>Data de vencimento</label>
+                <input type="text" id="data-vencimento">
+            </div>
+            <div class="div-form">
+                <label>Tipo</label>
+                <input type="text" id="tipo">
+            </div>
+
+            <div class="div-form">
+                <input type="button" id="salvar" value="Salvar">
+            </div>
+        </form>
+
+        <h2>Contas cadastradas</h2>
+
+        <table id="table-contas">
+            <tr>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Data de vencimento</th>
+                <th>Tipo</th>
+            </tr>
+        </table>
+
+        <div id="div-saldo">
+            <label id="saldo">Saldo: R$ </label>
+            <label id="valor-saldo">0</label>
+        </div>
+
+    </div>
+    <script src="JS/index.js"></script>
 </body>
 </html>
